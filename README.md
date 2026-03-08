@@ -1,35 +1,40 @@
-## AI Timesheet Intelligence
+# AI Timesheet Intelligence
 
-Prototype demonstrating how AI-driven workflows can automate
-timesheet anomaly detection for finance operations.
+Prototype demonstrating how Agentic AI can automate
+timesheet anomaly detection for finance workflows.
 
 ## Problem
 
-Timesheets directly impact billing accuracy, project profitability,
-and revenue reporting. Finance teams often review entries manually
-to identify anomalies.
+Timesheets impact billing accuracy, project profitability,
+and revenue reporting. Finance teams often review entries
+manually to identify anomalies.
 
-This project shows how operational data can be evaluated against
-finance policies to surface only high-risk exceptions.
+This prototype demonstrates how AI agents can monitor
+timesheet data and surface only high-risk exceptions.
 
-## Workflow
+## Agentic Workflow
 
 Operational Systems (Timesheets / ERP)
 ↓
-Data Consolidation
+Data Agent
 ↓
-Policy Evaluation
+Policy Agent
 ↓
-Anomaly Detection
+Tool: Project Effort Calculator
 ↓
-Risk Classification
+Risk Agent
 ↓
-Finance Exception Dashboard
+LLM Insight Agent
+↓
+Reflection Agent
+↓
+Finance Insight
 
-## Example Output
+## Technology Stack
 
-The script identifies entries that exceed policy thresholds
-and classifies financial risk.
+Python  
+Groq LLM (Llama3)  
+Pandas  
 
 ## Run
 
@@ -37,6 +42,10 @@ Install dependencies
 
 pip install -r requirements.txt
 
-Run the prototype
+Set Groq API key
+
+export GROQ_API_KEY=your_api_key_here
+
+Run the workflow
 
 python app.py
